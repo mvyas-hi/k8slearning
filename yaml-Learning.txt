@@ -1,0 +1,111 @@
+KEY - Value pair 
+
+Fruit: Apple
+Vegetable: carrot
+Liquid: Water
+###########################
+
+Array/lists in yaml
+
+Fruits:
+-	Orange
+-	Apple
+-	Mango
+
+Vegetables:
+-	Carrot
+-	Cauliflower
+-	Tometo
+
+##############################
+
+Dictionary/Map In YMAL
+
+Banana:
+	Calories: 105
+	Fat: 0.4 g
+	Carbs: 27 g
+
+Grapes:
+	Calories: 62
+	Fat: 0.3 g
+	Carbs: 16 g
+	
+
+################################
+
+Key Value/Dictionary/lists
+
+Fruits:
+	-	Banana:
+			Calories: 105
+			Fat: 0.4 g
+			Carbs: 27 g
+	-	Grapes:
+			Calories: 62
+			Fat: 0.3 g
+			Carbs: 16 g
+			
+################################
+
+Dictionary vs List vs List of Dictionary
+
+
+
+###############################################
+
+creating yaml file on to fly with run command instead of creating pod
+
+kubectl run (pod name) redis --image=redis123 --dry-run=client -o pod.yaml
+
+#####################################################################
+
+Create Pod using YMAL file 
+
+kubectl apply -f pod.yaml (yaml file)
+
+#######################################################################
+
+display the pods wide 
+
+kubectl get pods -o wide
+
+
+########################################################################
+
+
+DEPLOYMENT --- Updates and Rollback Commands
+
+CREATE ---
+kubectl create -f (Deployment file name) deployment-definition.yaml
+
+GET ---- 
+kubectl get deploymnets
+
+UPDATE ----
+
+kubectl apply -f (Deployment file name) deployment-definition.yaml
+
+kubectl set image deploymnet/myapp-deploymnet nginx=nginx:1.9.1
+
+STATUS -----
+
+kubectl rollout status deploymnet/myapp-deploymnet
+
+kubectl rollout history deploymnet/myapp-deploymnet
+
+ROLLBACK  -----
+
+kubectl rollout undo deploymnet/myapp-deploymnet
+
+
+
+
+
+
+
+
+
+
+
+
