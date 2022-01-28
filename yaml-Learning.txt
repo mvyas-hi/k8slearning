@@ -99,6 +99,12 @@ ROLLBACK  -----
 kubectl rollout undo deploymnet/myapp-deploymnet
 
 
+Puyeshbhai--- demo on ad connect by tomorrow to HB & VT
+Tusharbhai -- still working on vibhasa, given input to keshav, and waiting for update.
+Manglesh -- made good progress on aws server migration and should be able to give demo by 3rd week.
+
+
+
 
 
 
