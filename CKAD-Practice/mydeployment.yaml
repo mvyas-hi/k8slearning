@@ -21,4 +21,11 @@ spec:
       - image: nginx
         name: nginx
         resources: {}
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              -  matchExpressions:
+                   - key: node-role.kubernetes.io/master
+                     operator: Exists
 status: {}
